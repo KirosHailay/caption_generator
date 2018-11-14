@@ -23,7 +23,7 @@ def get_encoding(model, img):
 	image = load_image('Flicker8k_Dataset/'+str(img))
 	pred = model.predict(image)
 	pred = np.reshape(pred, pred.shape[1])
-	print "Encoding image: "+str(counter)
+	print "Encoding image: " + str(counter)
 	print pred.shape
 	return pred
 
